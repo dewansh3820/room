@@ -1,0 +1,124 @@
+<!--<!DOCTYPE html>
+<html>
+
+ <head>
+
+  <script
+   src="https://aframe.io/releases/1.0.4/aframe.min.js">
+  </script>
+
+ </head>
+
+ <body>
+    <a-scene> 
+
+      Camera
+        <a-entity position = "0 1 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        
+
+       Room 
+        <a-plane position = " 0 0 5" width = "25" height = "20" rotation = "21343231 0  0" src = "floor.jpg"></a-plane>
+
+        <a-plane position = "10 5 5" width = "25" height = "10" rotation = "0 8900 0" color = "green"></a-plane>
+
+        <a-plane position = "0 5 -5" width = "25" height = "10" color = "green" src = "12345.avif"></a-plane>
+
+        <a-plane position = "-10 5 5" width = "25" height = "10" rotation = "0 -8900 0" color = "green" src = "12345.avif"></a-plane>
+
+        <a-box position = " 0 10 5" width = "25" height = "20" rotation = "21343231 0  0" color = "blue" ></a-box>
+    
+
+    </a-scene>
+
+ </body>
+
+
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Floor -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" src = "floor.jpg"></a-plane>
+
+      <!-- Ceiling -->
+      <a-plane position="0 4 0" rotation="90 0 0" width="10" height="10"  color="#ECECEC"></a-plane>
+
+      <!-- Walls -->
+      <a-plane position="0 2 -5" rotation="0 0 0" width="10" height="4" src = "wall_2.jpg"></a-plane>
+      <a-plane position="0 2 5" rotation="0 180 0" width="10" height="4" src = "wall_2.jpg"></a-plane>
+      <a-plane position="5 2 0" rotation="0 -90 0" width="10" height="4" src = "wall_2.jpg"></a-plane>
+      <a-plane position="-5 2 0" rotation="0 90 0" width="10" height="4" src = "wall_2.jpg"></a-plane>
+
+      <!-- Table -->
+      <a-box position="0 0.75 -3" width="4" height="0.1" depth="2" color="#8B4513"></a-box>
+      <a-cylinder position="1.9 0.375 -2.1" radius="0.05" height="0.75" color="#8B4513"></a-cylinder>
+      <a-cylinder position="1.9 0.375 -3.9" radius="0.05" height="0.75" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-1.9 0.375 -2.1" radius="0.05" height="0.75" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-1.9 0.375 -3.9" radius="0.05" height="0.75" color="#8B4513"></a-cylinder>
+
+       <!-- Chair -->
+      <!-- Seat -->
+      <a-box position="3 0.45 -3" rotation="0 90 0" width="0.8" height="0.1" depth="0.8" color="#D2691E"></a-box>
+      <!-- Backrest -->
+      <a-box position="3.4 0.8 -3" rotation="0 90 0" width="0.8" height="0.8" depth="0.1" color="#D2691E"></a-box>
+      <!-- Legs -->
+      <a-cylinder position="2.65 0.225 -2.65" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="2.65 0.225 -3.35" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="3.35 0.225 -2.65" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="3.35 0.225 -3.35" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+
+       <!-- Chair -->
+      <!-- Seat -->
+      <a-box position="-3 0.45 -3" rotation="0 90 0" width="0.8" height="0.1" depth="0.8" color="#D2691E"></a-box>
+      <!-- Backrest -->
+      <a-box position="-3.4 0.8 -3" rotation="0 90 0" width="0.8" height="0.8" depth="0.1" color="#D2691E"></a-box>
+      <!-- Legs -->
+      <a-cylinder position="-3.35 0.225 -2.65" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-3.35 0.225 -3.35" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-2.65 0.225 -2.65" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-2.65 0.225 -3.35" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+
+      <!-- Chair Facing Backwards -->
+      <!-- Seat -->
+      <a-box position="1 0.45 -1.5" width="0.8" height="0.1" depth="0.8" color="#D2691E"></a-box>
+      <!-- Backrest -->
+      <a-box position="1 0.85 -1.15" width="0.8" height="0.8" depth="0.1" color="#D2691E"></a-box>
+      <!-- Legs -->
+      <a-cylinder position="0.7 0.225 -1.85" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="1.3 0.225 -1.85" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="0.7 0.225 -1.15" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="1.3 0.225 -1.15" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+
+ <!-- Chair Facing Backwards -->
+      <!-- Seat -->
+      <a-box position="-1 0.45 -1.5" width="0.8" height="0.1" depth="0.8" color="#D2691E"></a-box>
+      <!-- Backrest -->
+      <a-box position="-1 0.85 -1.15" width="0.8" height="0.8" depth="0.1" color="#D2691E"></a-box>
+      <!-- Legs -->
+      <a-cylinder position="-1.3 0.225 -1.85" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-0.7 0.225 -1.85" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-1.3 0.225 -1.15" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+      <a-cylinder position="-0.7 0.225 -1.15" radius="0.05" height="0.45" color="#8B4513"></a-cylinder>
+
+
+      
+     
+      <!-- Camera -->
+      <a-entity position="0 0 5">
+
+        <a-camera></a-camera>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
+
